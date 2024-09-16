@@ -365,7 +365,7 @@ span.lineno {
 .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 
-#intro{background-image: url("https://github.com/neurolibre/day/blob/master/img/nlday.gif?raw=true") !important;
+#intro{background-image: url("https://github.com/neurolibre/day/blob/master/img/sfkbanner.jpg?raw=true") !important;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;

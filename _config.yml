@@ -10,10 +10,10 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "NeuroLibre Day"
-keywords:    "Reproducible publishing, NeuroLibre, Montreal"
+title:       "Science for Kids"
+keywords:    "North Macedonia"
 description: "Symposium"
-source_link: "https://github.com/neurolibre/day"
+source_link: "https://github.com/agahkarakuzu/s4k"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key:
