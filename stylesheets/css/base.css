@@ -365,6 +365,13 @@ span.lineno {
 .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 
+#intro {
+	background-image: url(https://agahkarakuzu.github.io/s4k/img/sfkbanner.jpg);
+	background-size: contain;
+	height: auto;
+	width: auto;
+	background-repeat: no-repeat;
+}
 
 	@media only screen and (max-width: 767px) {
 		#intro {background-size: contain; height: auto; width: auto;}
