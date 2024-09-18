@@ -367,7 +367,8 @@ span.lineno {
 
 #intro {
 	background-image: url(https://agahkarakuzu.github.io/s4k/img/sfkbanner.jpg);
-	background-size: contain;
+	background-size: cover;
+	box-sizing: content-box;
 	height: auto;
 	width: auto;
 	background-repeat: no-repeat;
