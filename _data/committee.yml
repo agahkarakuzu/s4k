@@ -21,96 +21,13 @@ people:
     image:  bermudez.jpg
     affiliation: McGill University
 speakers:
-  - name: "Alan Evans"
-    image:  evans.jpg
-    affiliation: McGill University
-    twitter: #
-    linkedin: #
-    researchgate: #
-  - name: "Shigeki Aoki"
-    image:  shigeki.jpg
-    affiliation: Juntendo University Tokyo
-  - name: "Masaya Takahashi"
-    image:  masaya.png
-    affiliation: Juntendo University Tokyo
-  - name: "Biljana Angelova"
-    image:  biljana.jpg
-    affiliation: UKIM Skopje
-    twitter: #
-    linkedin: #
-    researchgate: #
-  - name: "Peter Jezzard"
-    image:  jezzard.jpg
-    affiliation: University of Oxford
-    twitter: #
-    linkedin: #
-  - name: "Ariel Rokem"
-    image:  rokem.jpeg
-    affiliation: University of Washington
-    researchgate: #
-  - name: "Mihaela Iordanova"
-    image:  mihaela.jpg
-    affiliation: Concordia University
-    researchgate: #
-  - name: "Chris Holdgraf"
-    image:  chold.jpeg
-    affiliation: 2i2c
-  - name: "Alain Dagher"
-    image:  dagher.jpg
-    affiliation: McGill University
-    researchgate: #
-  - name: "Bas Rokers"
-    image:  rokers.jpg
-    affiliation: NYU Abu Dhabi
-    researchgate: #
-  - name: "Peter Bandettini"
-    image:  pband.jpg
-    affiliation: National Institute of Mental Health
-    twitter: #
-    linkedin: #
-    researchgate: #
-  - name: "Ordan Chukaliev"
-    image:  ordan.jpg
-    affiliation: UKIM Skopje
-    twitter: #
-    linkedin: #
-  - name: "Valentina Gecevska"
-    image:  gecevska.jpg
-    affiliation: UKIM Skopje
-    researchgate: #
-  - name: "Masaaki Hori"
-    image:  hori.jpg
-    affiliation: Toho University
-  - name: "Sun Zhe"
-    image:  sunzhe.jpeg
-    affiliation: Juntendo University
-  - name: "Akifumi Hagiwara"
-    image:  akifumi.png
-    affiliation: Juntendo University
-  - name: "Aleksandar Skeparovski"
-    image:  skeparov.jpg
-    affiliation: UKIM Skopje
-  - name: "Nikola Stikov"
-    image:  NikolaStikov.jpg
-    affiliation: École Polytechnique de Montréal
-  - name: "Pierre Lune Bellec"
-    image:  bellec.jpg
-    affiliation: Universite de Montréal
-  - name: "Patrick Bermudez"
-    image:  bermudez.jpg
-    affiliation: McGill University
-  - name: "J.B. Poline"
-    image:  jbp.jpg
-    affiliation: McGill University
-  - name: "Samir Das"
-    image:  das.jpg
-    affiliation: McGill University
-  - name: "Mathieu Boudreau"
-    image:  MathieuBoudreau.jpg
-    affiliation: Polytechnique Montreal
-  - name: "Elizabeth DuPre"
-    image:  dupre.jpg
-    affiliation: Stanford University
-  - name: "Agah Karakuzu"
-    image:  AgahKarakuzu.jpg
-    affiliation: École Polytechnique de Montréal
+  - name: "Justin Bieber"
+    image:  1.jpg
+  - name: "Chadwick Boseman"
+    image:  2.jpg
+  - name: "Dwayne Johnson"
+    image:  3.jpg
+  - name: "Vin Diesel"
+    image:  4.jpg
+  - name: "Isaac Newton"
+    image:  5.jpg
