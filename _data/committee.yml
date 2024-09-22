@@ -5,21 +5,6 @@ people:
     twitter: https://twitter.com/Stikov
     linkedin: #
     researchgate: #
-  - name: "Agah Karakuzu"
-    image:  AgahKarakuzu.jpg
-    affiliation: École Polytechnique de Montréal, Montreal Heart Institute, University of Montréal
-  - name: "Samir Das"
-    image:  das.jpg
-    affiliation: McGill University
-  - name: "Julie Boyle"
-    image:  boyle.jpg
-    affiliation: Universite de Montréal
-  - name: "Pierre Lune Bellec"
-    image:  bellec.jpg
-    affiliation: Universite de Montréal
-  - name: "Patrick Bermudez"
-    image:  bermudez.jpg
-    affiliation: McGill University
 speakers:
   - name: "Justin Bieber"
     image:  1.png

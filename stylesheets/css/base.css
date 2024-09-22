@@ -365,7 +365,7 @@ span.lineno {
 .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 
-#intro {
+/* #intro {
 	background-image: url(https://agahkarakuzu.github.io/s4k/img/sfkbanner.jpg);
 	background-size: cover;
 	box-sizing: content-box;
@@ -373,7 +373,7 @@ span.lineno {
 	width: auto;
 	background-repeat: no-repeat;
 	background-position: center;
-}
+} */
 
 	@media only screen and (max-width: 767px) {
 		#intro {background-size: contain; height: auto; width: auto;}
@@ -385,16 +385,79 @@ span.lineno {
 
 .speaker-random {
 	font-size: medium;
-    font-style: italic;
-	color: aliceblue;
+	color: black;
+	font-size: 20px;
 }
 
 .title-random {
     font-style: bold;
-	color: limegreen;
+	color: #c74b4c;
+	font-size: 25px;
 }
 
 .break-random {
     font-style: bold;
 	color: orange;
 }
+
+.info-box {
+	background-color: #f7b901;
+	border-left: 6px solid #f4eded;
+	border-right: 6px solid #f4eded;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 3px;
+	text-align: center;
+	color: black;
+  }
+  
+  .info-box p {
+	font-size: 18px;
+	line-height: 1.6;
+  }
+  
+  .info-box a {
+	color: crimson !important;
+	text-decoration: none;
+  }
+
+  .banner-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	overflow: hidden;
+	padding-top: 1vh; /* Adjust this value to move the image down as needed */
+  }
+  
+  .banner-image {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 90vh; /* Reduced from 100vh to prevent overflow */
+	object-fit: contain;
+	object-position: center top;
+  }
+  @media only screen and (max-width: 767px) {
+	.banner-container {
+	  height: auto;
+	  min-height: 20vh;
+	}
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 950px) {
+	.banner-container {
+	  height: 600px;
+	  justify-content: center;
+	}
+  }
+
+  .agenda-image {
+	width: 100px;  /* Default size */
+	height: auto;
+  }
+  
+  .agenda-image-large {
+	width: 200px;  /* Larger size */
+  }

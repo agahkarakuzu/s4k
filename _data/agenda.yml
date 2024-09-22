@@ -1,30 +1,83 @@
 saturday1:
-  - title: "Introducing NeuroLibre"
-    time:  9h30m-12h
-    place: Amphithéâtre Le Groupe Maurice du CRIUGM
-    image: intro_neuro.png
-    text:  ☘️ <b class="title-random">Welcome 9:30-9:45 </b> <br> <i class="speaker-random">Pierre Lune Bellec and Patrick Bermudez</i> <br><br> 🌱 <b class="title-random">Creating NeuroLibre 9:45-10:30</b> <br> <i class="speaker-random">Agah Karakuzu, Elizabeth DuPre, and Samir Das</i> <br><br> 🏵️ <b  class="break-random">Session Break 9:45-10:30</b> <br><br> 🪴 <b class="title-random">NeuroLibre Federation 10:30-12 </b> <br> <i class="speaker-random">Bas Roskers (NYU Abu Dhabi, UAE) <br> Shigeki Aoki & Sun Zhe (Juntendo University, Japan) <br>  Biljana Angelova & Ordan Chukaliev (UKIM, Macedonia)</i>
-  - title: "Coffee Break"
-    time:  12h-13h
-    place: Amphithéâtre Le Groupe Maurice du CRIUGM
-    image: coffee_break.png
+  - title: "🚪DOORS OPEN"
+    time:  "18:30"
+    place: NOVA International Schools
+    image: kid-welcome.png
+    text: |
+      🎊 <b class="title-random">Welcome 19:00-19:15 </b> <br> <i class="speaker-random">
+      <br> <b>Dragana Stikova</b> <br> Director of Foundation KANTAROT
+      <br> <b>Ivan Novakovski</b> <br> Director of NOVA International School Skopje
+      <br> <b>Hugo Bechtel</b> <br> Director of l'Institut français de Skopje</i>
+  - title: "🏆 PRESENTATION OF AWARDS"
+    time:  "19:15"
+    place: NOVA International Schools
+    image: kid-award.png
     text:  ""
-  - title: "Reproducible Academic Publishing"
-    time:  13h-15h
-    place: Amphithéâtre Le Groupe Maurice du CRIUGM
-    image: rep_neuro.png
-    text:  🌿 <b class="title-random">Introduction 13:00-13:15 </b> <br> <i class="speaker-random">Alan Evans & Nikola Stikov</i> <br><br> 📗 <b class="title-random">Perspectives from Journals 13:15-15:00 </b><br> <i class="speaker-random">Peter Bandettini and Mallar Chakravarty (Aperture Neuro)</i> <br> <i class="speaker-random">Peter Jezzard and Mathieu Boudreau (Magn. Reson. Med.)</i> <br> <i class="speaker-random"> Maasaki Hori & Masaya Takashi & Akifumi Hagiwara (MRMS)</i> <br> <i class="speaker-random">Michaela Iordanova (eLife)</i> <br> <i class="speaker-random">Ariel Rokem (Journal of Open Source Software)</i> <br> <i class="speaker-random">Alain Dagher (Imaging Neuroscience)</i>
-  - title: "Break"
-    time:  15h-16h
-    place: Amphithéâtre Le Groupe Maurice du CRIUGM
-    image: food_neuro.png
-    text:  ""        
-  - title: "Townhall Meeting"
-    time:  16h-17h
-    place: Amphithéâtre Le Groupe Maurice du CRIUGM
-    image: meet_neuro.png
-    text:  🍃 Unconference-style session
-  - title: "Reception"
-    time:  17h
-    place: Amphithéâtre Le Groupe Maurice du CRIUGM
-    image: reception.png
+  - title: "PLENARY LECTURE 1"
+    time:  "19:30"
+    place: NOVA International Schools
+    image: 1.png
+    text: ""
+    large: true
+  - title: "PLENARY LECTURE 2"
+    time:  "19:45"
+    place: NOVA International Schools
+    image: 2.png
+    large: true
+    text: ""
+  - title: "PLENARY LECTURE 3"  
+    time:  "20:00"
+    place: NOVA International Schools
+    image: 3.png
+    text: ""
+    large: true
+  - title: "PLENARY LECTURE 4"
+    time:  "20:15"
+    place: NOVA International Schools
+    image: 4.png
+    text: ""
+    large: true
+  - title: "PLENARY LECTURE 5"
+    time:  "20:30"
+    place: NOVA International Schools
+    image: 5.png
+    text: ""
+    large: true
+  - title: "PLENARY LECTURE 5"
+    time:  "20:30"
+    place: NOVA International Schools
+    image: 6.png
+    text: ""
+    large: true
+saturday2:
+  - title: "🎨 WORKSHOPS"
+    time:  "10:30-12:00"
+    place: NOVA International Schools
+    image: kid-workshop.png
+    text: |
+      <b class="title-random">Capillary action </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="https://forms.gle/MoBNNwfh6WT2qqz5A" target="_blank">Registration (children 0-12 years)</a></i>
+       <br><br><b class="title-random">Electromotors </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (children 0-12 years)</a></i>
+       <br><br><b class="title-random">French science </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (teenagers 13-15 years)</a></i>
+       <br><br><b class="title-random">Generative AI </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (teenagers 13-15 years)</a></i>
+  - title: "🇫🇷 EXHIBITION <br> PARLES VOUS FRANÇAIS?"
+    time:  "12:00-13:00"
+    place: NOVA International Schools
+    image: kid-french.png
+    text: ""
+  - title: "🎨 WORKSHOPS"
+    time:  "13:00-14:30"
+    place: NOVA International Schools
+    image: kid-workshop.png
+    text: |
+      <b class="title-random">Capillary action </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="https://forms.gle/cJuUbJNaTKqP7BzT7" target="_blank">Registration (children 13-15 years)</a></i>
+       <br><br><b class="title-random">Electromotors </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (teenagers 13-15 years)</a></i>
+       <br><br><b class="title-random">French science </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (children 10-12 years)</a></i>
+       <br><br><b class="title-random">Generative AI </b> <br> <i class="speaker-random">
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (children 10-12 years)</a></i>
