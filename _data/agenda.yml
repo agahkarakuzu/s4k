@@ -4,51 +4,58 @@ saturday1:
     place: NOVA International Schools
     image: kid-welcome.png
     text: |
-      🎊 <b class="title-random">Welcome 19:00-19:15 </b> <br> <i class="speaker-random">
+      🎊 <b class="title-random" style="color: #000;">WELCOME AND PRESENTATION OF AWARDS 19:00-19:15 </b> <br> <i class="speaker-random">
       <br> <b>Dragana Stikova</b> <br> Director of Foundation KANTAROT
       <br> <b>Ivan Novakovski</b> <br> Director of NOVA International School Skopje
       <br> <b>Hugo Bechtel</b> <br> Director of l'Institut français de Skopje</i>
-  - title: "🏆 PRESENTATION OF AWARDS"
-    time:  "19:15"
+      <br><br>
+
+  - title: "PLENARY LECTURES"
+    time:  "19:15-20:45"
     place: NOVA International Schools
     image: kid-award.png
     text:  ""
-  - title: "PLENARY LECTURE 1"
-    time:  "19:30"
+  - title: "PLENARY LECTURE"
+    time:  "19:15-19:45"
     place: NOVA International Schools
     image: 1.png
     text: ""
     large: true
-  - title: "PLENARY LECTURE 2"
-    time:  "19:45"
+  - title: "PLENARY LECTURE"
+    time:  "19:45-20:00"
     place: NOVA International Schools
     image: 2.png
     large: true
     text: ""
-  - title: "PLENARY LECTURE 3"  
-    time:  "20:00"
+  - title: "PLENARY LECTURE"
+    time:  "20:00-20:15"
     place: NOVA International Schools
     image: 3.png
     text: ""
     large: true
-  - title: "PLENARY LECTURE 4"
-    time:  "20:15"
+  - title: "PLENARY LECTURE"
+    time:  "20:15-20:30"
     place: NOVA International Schools
     image: 4.png
     text: ""
     large: true
-  - title: "PLENARY LECTURE 5"
-    time:  "20:30"
+  - title: "PLENARY LECTURE"
+    time:  "20:30-20:45"
     place: NOVA International Schools
     image: 5.png
     text: ""
     large: true
-  - title: "PLENARY LECTURE 5"
-    time:  "20:30"
+  - title: "PLENARY LECTURE"
+    time:  "20:45-21:00"
     place: NOVA International Schools
     image: 6.png
     text: ""
     large: true
+  - title: "COCKTAIL"
+    time:  "20:45"
+    place: NOVA International Schools
+    image: kids-cocktail.png
+    text: ""
 saturday2:
   - title: "🎨 WORKSHOPS"
     time:  "10:30-12:00"
@@ -56,9 +63,9 @@ saturday2:
     image: kid-workshop.png
     text: |
       <b class="title-random">Capillary action </b> <br> <i class="speaker-random">
-      📋 <a style="text-decoration: underline; color: #000;" href="https://forms.gle/MoBNNwfh6WT2qqz5A" target="_blank">Registration (children 0-12 years)</a></i>
+      📋 <a style="text-decoration: underline; color: #000;" href="https://forms.gle/MoBNNwfh6WT2qqz5A" target="_blank">Registration (children 10-12 years)</a></i>
        <br><br><b class="title-random">Electromotors </b> <br> <i class="speaker-random">
-      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (children 0-12 years)</a></i>
+      📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (children 10-12 years)</a></i>
        <br><br><b class="title-random">French science </b> <br> <i class="speaker-random">
       📋 <a style="text-decoration: underline; color: #000;" href="#####" target="_blank">Registration (teenagers 13-15 years)</a></i>
        <br><br><b class="title-random">Generative AI </b> <br> <i class="speaker-random">

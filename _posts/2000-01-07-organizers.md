@@ -7,10 +7,10 @@ iconclr: wednesday
 titleclr: wednesday
 ---
 
-<div class="team">
-<div class="row" style="justify-content:center;">
+<!-- <div class="team">
+<div class="row" style="justify-content:center;"> -->
 
-{% for person in site.data.committee.people %}
+<!-- {% for person in site.data.committee.people %}
 <div class="col-md-4">
 <center>
 <div class="team-player">
@@ -24,4 +24,4 @@ titleclr: wednesday
 </div>
   {% endfor %}
   </div>
-</div>
+</div> -->

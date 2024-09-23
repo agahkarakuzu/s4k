@@ -461,3 +461,26 @@ span.lineno {
   .agenda-image-large {
 	width: 200px;  /* Larger size */
   }
+
+  .activity-lg-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+  }
+  
+  .activity-lg-title {
+	flex: 1 1 auto;
+	margin: 3px;
+	font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+	.activity-lg-content {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.activity-lg-title {
+	  align-items: center;
+	}
+  }
