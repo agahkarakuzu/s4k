@@ -32,6 +32,21 @@ html { box-sizing: border-box; }
 {% endfor %}
 
 
+/* Ensure links are clickable */
+.container a {
+  pointer-events: auto; /* Ensure pointer events are enabled */
+  z-index: 1; /* Ensure links are on top */
+}
+
+/* Example of fixing overlapping elements */
+nav {
+  z-index: 10; /* Lower z-index to avoid overlapping */
+}
+
+.sectiondivider {
+  z-index: 5; /* Lower z-index to avoid overlapping */
+}
+
 /* ----- code, syntax highlighting, etc ----- */
 
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
@@ -124,7 +139,7 @@ nav {
   font-size:15px;
   width:100%;
   position:fixed;
-  z-index:100;
+  z-index:10; /* Lower z-index to avoid overlapping */
   top:0;
   left:0;
   background:#2e2e2e;
@@ -211,6 +226,7 @@ nav ul li:hover, nav ul li.active {
   top:-135px;
   left:50%;
   margin-left:-135px;
+  z-index:5; /* Lower z-index to avoid overlapping */
 }
 
 .sectiondivider img {
@@ -378,7 +394,7 @@ nav ul li:hover, nav ul li.active {
 .accordion {
   background-color: #28a745;
   color: #f8f8f2;
-  cursor: pointer;
+  cursor: ;
   width: 100%;
   text-decoration:none;
   font-family:arial,sans-serif;
