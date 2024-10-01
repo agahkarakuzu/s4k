@@ -72,7 +72,7 @@
       <ul class="side-nav" id="mobile-demo">
       {% for node in site.posts reversed %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+        <li class="p-{{id}}"><a href="https://agahkarakuzu.github.io/s4k/#{{id}}">{{node.title}}</a></li>
       {% endfor %}
       </ul>
     </nav>

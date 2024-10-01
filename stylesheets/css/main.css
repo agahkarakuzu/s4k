@@ -25,7 +25,7 @@ html { box-sizing: border-box; }
   {% capture fg2 %}{% if site.colors[node.border-color] %}{{ site.colors[node.border-color] }}{% else %}{{ node.border-color }}{% endif %}{% endcapture %}
   nav .p-{{id}} { border-color: {{ bg }}; z-index: 1; position: relative; }
   #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
-  https://agahkarakuzu.github.io/s4k/#{{id}} a { color: {{ fg }}; }
+  #{{id}} a { color: {{ fg }}; }
   #{{id}} .sectiondivider { color: {{ bg }}; }
   #main #{{id}} .activity { border-color: {{ fg2 }} }
   #main #{{id}} .section-lines { border-color: {{ fg2 }} }
