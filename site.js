@@ -8,7 +8,7 @@ $.extend($.easing, {
     }
 });
 
-(function($) {
+(function ($) {
 
     var settings;
     var disableScrollFn = false;
@@ -22,11 +22,11 @@ $.extend($.easing, {
         } else if (width > 768) {
             return 120;  // Tablet offset
         } else {
-            return 70;   // Mobile offset
+            return 70;   // Mobile offset, reduced for better performance
         }
     }
 
-    $.fn.navScroller = function(options) {
+    $.fn.navScroller = function (options) {
         settings = $.extend({
             scrollToOffset: getResponsiveOffset(),
             scrollSpeed: 800,
@@ -34,8 +34,8 @@ $.extend($.easing, {
         }, options);
         navItems = this;
 
-        // Attach click and touch listeners
-        navItems.on('click touchstart', function(event) {
+        // Attach click listeners for both click and touchstart (for mobile)
+        navItems.on('click touchstart', function (event) {
             event.preventDefault();
             var navID = $(this).attr("href").substring(1);
             disableScrollFn = true;
@@ -43,7 +43,7 @@ $.extend($.easing, {
             populateDestinations(); // Recalculate these!
             $('html,body').animate({
                 scrollTop: sections[navID] - settings.scrollToOffset
-            }, settings.scrollSpeed, "easeInOutExpo", function() {
+            }, settings.scrollSpeed, "easeOutQuad", function () {
                 disableScrollFn = false;
             });
         });
@@ -52,13 +52,11 @@ $.extend($.easing, {
         populateDestinations();
 
         // Setup scroll listener
-        $(document).scroll(function() {
-            if (disableScrollFn) {
-                return;
-            }
+        $(document).scroll(function () {
+            if (disableScrollFn) { return; }
             var page_height = $(window).height();
             var pos = $(this).scrollTop();
-            for (i in sections) {
+            for (var i in sections) {
                 if ((pos + settings.scrollToOffset >= sections[i]) && sections[i] < pos + page_height) {
                     activateNav(i);
                 }
@@ -66,14 +64,14 @@ $.extend($.easing, {
         });
 
         // Update the offset when the window is resized
-        $(window).resize(function() {
+        $(window).resize(function () {
             settings.scrollToOffset = getResponsiveOffset();
             populateDestinations(); // Recalculate section positions on resize
         });
     };
 
     function populateDestinations() {
-        navItems.each(function() {
+        navItems.each(function () {
             var scrollID = $(this).attr('href').substring(1);
             navs[scrollID] = (settings.activateParentNode) ? this.parentNode : this;
 
@@ -81,44 +79,39 @@ $.extend($.easing, {
             if (element) { // Check if the element exists
                 sections[scrollID] = $(element).offset().top;
             } else {
-                // Handle the case where the element doesn't exist (optional)
                 console.warn(`Element with ID ${scrollID} not found.`);
             }
         });
     }
 
     function activateNav(navID) {
-        for (nav in navs) {
-            $(navs[nav]).removeClass('active');
-        }
+        for (var nav in navs) { $(navs[nav]).removeClass('active'); }
         $(navs[navID]).addClass('active');
     }
 
 })(jQuery);
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     // Initialize the side navigation for mobile
-    $(".button-collapse").sideNav({
-        closeOnClick: true, // Ensure that the menu closes on item click
-    });
+    $(".button-collapse").sideNav();
 
     // Initialize navScroller for smooth scrolling in nav items
     $('nav li a').navScroller();
 
     // Section divider icon click gently scrolls to reveal the section
-    $(".sectiondivider").on('click', function(event) {
+    $(".sectiondivider").on('click', function (event) {
         $('html,body').animate({ scrollTop: $(event.target.parentNode).offset().top - 50 }, 400, "linear");
     });
 
     // Links going to other sections nicely scroll
-    $(".container a").each(function() {
+    $(".container a").each(function () {
         if ($(this).attr("href").charAt(0) == '#') {
-            $(this).on('click', function(event) {
+            $(this).on('click touchstart', function (event) {
                 event.preventDefault(); // Prevent default action
                 var target = $(event.target).closest("a");
                 var targetHeight = $(target.attr("href")).offset().top;
-                $('html,body').animate({ scrollTop: targetHeight - getResponsiveOffset() }, 800, "easeInOutExpo");
+                $('html,body').animate({ scrollTop: targetHeight - 170 }, 800, "easeOutQuad");
             });
         }
     });
@@ -130,33 +123,35 @@ $(document).ready(function() {
         autoplay: true,
         arrows: true,
         dots: true,
-        responsive: [{
-            breakpoint: 976,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 6
+        responsive: [
+            {
+                breakpoint: 976,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 6
+                }
             }
-        }]
+        ]
     });
 
-    // Initialize Gridder
+    // Call Gridder
     $('.gridder').gridderExpander({
         scroll: true,
         scrollOffset: 60,
         scrollTo: "panel", // panel or listitem
         animationSpeed: 400,
-        animationEasing: "easeInOutExpo",
+        animationEasing: "easeOutQuad",
         showNav: true,
         nextText: "<i class=\"fa fa-arrow-right\"></i>",
         prevText: "<i class=\"fa fa-arrow-left\"></i>",
         closeText: "<i class=\"fa fa-times\"></i>",
-        onStart: function() {
+        onStart: function () {
             console.log("Gridder Initialized");
         },
-        onContent: function() {
+        onContent: function () {
             console.log("Gridder Content Loaded");
         },
-        onClosed: function() {
+        onClosed: function () {
             console.log("Gridder Closed");
         }
     });
