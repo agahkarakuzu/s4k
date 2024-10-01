@@ -23,7 +23,7 @@ html { box-sizing: border-box; }
   {% capture bg %}{% if site.colors[node.bg] %}{{ site.colors[node.bg] }}{% else %}{{ node.bg }}{% endif %}{% endcapture %}
   {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
   {% capture fg2 %}{% if site.colors[node.border-color] %}{{ site.colors[node.border-color] }}{% else %}{{ node.border-color }}{% endif %}{% endcapture %}
-  nav .p-{{id}} { border-color: {{ bg }}; width: 100%; }
+  nav .p-{{id}} { border-color: {{ bg }};}
   #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
   #{{id}} a { color: {{ fg }}; }
   #{{id}} .sectiondivider { color: {{ bg }}; }
