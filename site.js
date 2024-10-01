@@ -105,7 +105,7 @@ $(document).ready(function () {
     $(".container a").each(function(){
         if ($(this).attr("href").charAt(0) == '#'){
             $(this).on('click', function(event) {
-                // No event.preventDefault() here
+                event.preventDefault();
                 var target = $(event.target).closest("a");
                 var targetHight =  $(target.attr("href")).offset().top;
                 $('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
