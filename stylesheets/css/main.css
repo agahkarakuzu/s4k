@@ -35,16 +35,7 @@ html { box-sizing: border-box; }
 /* Ensure links are clickable */
 .container a {
   pointer-events: auto; /* Ensure pointer events are enabled */
-  z-index: 1; /* Ensure links are on top */
-}
-
-/* Example of fixing overlapping elements */
-nav {
-  z-index: 10; /* Lower z-index to avoid overlapping */
-}
-
-.sectiondivider {
-  z-index: 5; /* Lower z-index to avoid overlapping */
+  z-index: 9999; /* Ensure links are on top */
 }
 
 /* ----- code, syntax highlighting, etc ----- */
@@ -139,7 +130,7 @@ nav {
   font-size:15px;
   width:100%;
   position:fixed;
-  z-index:10; /* Lower z-index to avoid overlapping */
+  z-index:100;
   top:0;
   left:0;
   background:#2e2e2e;
@@ -226,7 +217,7 @@ nav ul li:hover, nav ul li.active {
   top:-135px;
   left:50%;
   margin-left:-135px;
-  z-index:5; /* Lower z-index to avoid overlapping */
+  z-index:5;
 }
 
 .sectiondivider img {
@@ -320,7 +311,6 @@ nav ul li:hover, nav ul li.active {
     width:200px;
     overflow:hidden;
     height:200px;
-    z-index:9999;
   }
   #forkongithub a {
     width:200px;
