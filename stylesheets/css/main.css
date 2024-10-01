@@ -34,8 +34,7 @@ html { box-sizing: border-box; }
 
 /* Ensure links are clickable */
 .container a {
-  pointer-events: auto; /* Ensure pointer events are enabled */
-  z-index: 9999; /* Ensure links are on top */
+  pointer-events: auto;
 }
 
 /* ----- code, syntax highlighting, etc ----- */
