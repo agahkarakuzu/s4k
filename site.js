@@ -71,11 +71,31 @@ $.extend($.easing,
         });
     };
 
+    // function populateDestinations() {
+    //     navItems.each(function(){
+    //         var scrollID = $(this).attr('href').substring(1);
+    //         var targetElement = document.getElementById(scrollID);
+    //         if (targetElement) {
+    //             navs[scrollID] = (settings.activateParentNode) ? this.parentNode : this;
+    //             sections[scrollID] = $(targetElement).offset().top;
+    //         } else {
+    //             console.warn('Element with ID ' + scrollID + ' not found.');
+    //         }
+    //     });
+    // }
+
     function populateDestinations() {
         navItems.each(function(){
             var scrollID = $(this).attr('href').substring(1);
             navs[scrollID] = (settings.activateParentNode) ? this.parentNode : this;
-            sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
+    
+            var element = document.getElementById(scrollID);
+            if (element) { // Check if the element exists
+                sections[scrollID] = $(element).offset().top;
+            } else {
+                // Handle the case where the element doesn't exist (optional)
+                console.warn(`Element with ID ${scrollID} not found.`); 
+            }
         });
     }
 
