@@ -89,6 +89,8 @@ $.extend($.easing, {
         $(navs[navID]).addClass('active');
     }
 
+
+
 })(jQuery);
 
 $(document).ready(function () {
@@ -96,6 +98,23 @@ $(document).ready(function () {
     // Initialize the side navigation for mobile
     $(".button-collapse").sideNav();
 
+    $(window).resize(function () {
+        adjustSidebar();
+    });
+
+    function adjustSidebar() {
+        if ($(window).width() < 768) {
+            $('.sidebar').css({
+                'width': '100%', // Ensure sidebar takes full width on mobile
+                'position': 'absolute'
+            });
+        } else {
+            $('.sidebar').css({
+                'width': '250px', // Set to your preferred width
+                'position': 'fixed'
+            });
+        }
+    }
     // Initialize navScroller for smooth scrolling in nav items
     $('nav li a').navScroller();
 
